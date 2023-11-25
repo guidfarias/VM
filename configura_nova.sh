@@ -59,6 +59,7 @@ sleep   2
 	echo "Criando a pasta para as chaves SSH do usuário 'dropmysite'..."
 sleep   2
 		mkdir /home/dropmysite/.ssh
+  		chmod 700 /home/dropmysite/.ssh
 	echo "A pasta para as chaves SSH do usuário 'dropmysite' foi criada."
 sleep	2
 
