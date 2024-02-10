@@ -168,6 +168,7 @@ sleep   1
         echo "Alterando a configuração do servidor SSH para aceitar apenas autenticação com chave..."
 sleep   1
                 sed -i 's/PermitRootLogin yes/PermitRootLogin no/g' /etc/ssh/sshd_config
+		sed -i 's/PermitRootlogin yes/PermitRootlogin no/g' /etc/ssh/sshd_config
                 sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/sshd_config
                 sed -i 's/PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd_config
 		sed -i '42i AuthorizedKeysFile     .ssh/authorized_keys' /etc/ssh/sshd_config
